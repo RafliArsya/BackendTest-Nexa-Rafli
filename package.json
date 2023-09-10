@@ -1,0 +1,35 @@
+{
+  "name": "backendtest",
+  "version": "1.0.0",
+  "description": "API-Nodejs-Express-MySQL-jwt",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mysql",
+    "rest"
+  ],
+  "author": "RedLeo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.4",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.1",
+    "router": "^1.3.8",
+    "sequelize": "^6.33.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
