@@ -18,6 +18,8 @@ function containsSpecialChars(str) {
 //    return dt;
 //};
 
+//TODO: Create tokenexpired check rather than write it every controller?
+
 export const Signin = async(req, res) => {
     try {   
         var Now = moment().tz("Asia/Jakarta").format('YYYY-MM-DD HH:mm:ss');
@@ -237,7 +239,8 @@ export const Ucreate = async(req, res) => {
         //so I just hardcoded it la. Otherwise use this
         //var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl; //either full
         //var uapi = req.originalUrl; // api only
-        //sequelize.query("CALL sp_add_kary_rafli(:user_id, :nama, :alamat, :gend, :photo, :tgl_lahir, :insert_at, :api)",
+        //TBC it's not sequelize its db var because already sequelize in db.config.js
+        //await sequelize.query("CALL sp_add_kary_rafli(:user_id, :nama, :alamat, :gend, :photo, :tgl_lahir, :insert_at, :api)",
         //{ replacements:{
         //    user_id: id,
         //    nama: rnama,

@@ -49,7 +49,7 @@ BEGIN
       user_id,
        IF(api IS NULL, "sp_add_kary_rafli", api), 
       CONCAT('{"nip":"',nip,'","nama":"',nama,'","alamat":"',alamat,'","gend":"',gend,'","tgl_lahir":"',IF(tgl_lahir IS NULL, DATE(FROM_UNIXTIME(0)), tgl_lahir),'","insert_at":"',IF(insert_at IS NULL, now(), insert_at),'"}'),
-      "Operasi tambah data berhasil.",
+      "Operasi tambah data berhasil",
       insert_at
     );
   COMMIT;

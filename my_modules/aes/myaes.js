@@ -3,9 +3,9 @@ import crypto from "crypto";
 
 export function checklength(input){
     var inputhex = Buffer.from(input, 'utf8').toString('hex');
-    var inputbuffer = Buffer.from(inputhex, "hex")
+    var inputbuffer = Buffer.from(inputhex, "hex");
+    var chunkbuf = []; //whoops my bad for putting chunkbuf inside if scope.
     if (inputbuffer.length < 16){
-        var chunkbuf = [];
         chunkbuf.push(Buffer.from(inputbuffer));
         for (let i = inputbuffer.length; i < 16; i++){
             chunkbuf.push(Buffer.from([0x00]));
